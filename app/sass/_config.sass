@@ -2,7 +2,7 @@
 
 $accent: orange // Accent Color
 $fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
+$textcolor: #000000 // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 $roboto: Roboto, sans-serif // Roboto Font Family
 
@@ -27,15 +27,10 @@ $gutter: $grid-gutter-width
 		// font-display: swap // Uncomment to initially display system fonts
 		src: local($fname), url($furl) format('woff2')
 
-@font-face
-	font-family: "Righteous"
-    src : url("../fonts/src/Righteous-Regular.ttf")
-
 @include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2')
 @include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2')
 @include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2')
 @include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
-@include font('Righteous', normal, 400, '../fonts/righteous-regular.woff2')
 @include font('Nunito' , normal , 400 , '../fonts/nunito-regular-webfont.woff2')
 @include font('Nunito' , normal , 700 , '../fonts/nunito-bold-webfont.woff2')
 
@@ -63,3 +58,8 @@ body
 	line-height: 1.65
 	overflow-x: hidden
 	color: $textcolor
+	margin: 0
+
+.container
+	max-width: 1240px
+	margin: 0 auto
