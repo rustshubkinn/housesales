@@ -18,7 +18,7 @@ section.form
       margin: 0
       margin-bottom: 20px
     div
-      max-width: 690px
+      max-width: 75%
       position: relative
       input[type=tel]
         padding: 17px
@@ -30,33 +30,36 @@ section.form
         padding: 11px 42px
         border: none
         position: absolute
-        right: -4%
-        bottom: 10%
+        right: 8px
+        bottom: 8px
         font-size: 29px
         line-height: 40px
 
-@media ( max-width: 1080px )
+@media ( max-width: 1090px )
   section.form
     form
-      padding: 44px 126px
+      padding: 44px 44px
 
 @media ( max-width: 650px )
   section.form
     text-align: center
     form
       div
+        max-width: 100%
         input[type=tel]
           line-height: 25px
-          padding: 13px
+          padding: 10px
           font-size: 24px
         input[type=submit]
           position: relative
-          margin-top: 10px
+          right: 0
+          bottom: 0
+          margin-top: 20px
 
 @media ( max-width: 490px )
   section.form
     form
-      padding: 20px 60px
+      padding: 20px
       h3
         font-size: 25px
         line-height: 30px
