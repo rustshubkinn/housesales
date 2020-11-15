@@ -53,14 +53,15 @@
     justify-content: space-between
     div
       &:first-child
-        max-width: 637px
+        max-width: 45%
+        margin-right: 20px
         p
           font-size: 20px
           font-weight: 600
           line-height: 27px
           color: #000000
       &:last-child
-        max-width: 570px
+        max-width: 50%
         p
           font-size: 21px
           line-height: 32px
@@ -99,6 +100,13 @@
           display: block
           max-width: 300px
 
+    .explore
+      div
+        &:first-child
+          max-width: 20%
+        &:last-child
+          max-width: 75%
+
 @media ( max-width: 850px )
   .more-inspiration
     .title
@@ -110,6 +118,8 @@
   .more-inspiration
     .title
       margin-top: 70px
+      &.right-align
+        text-align: center
     .summary
       &-text
         text-align: center
@@ -123,3 +133,13 @@
         display: flex
         img
           max-width: 30%
+
+    .explore
+      flex-direction: column
+      div
+        &:first-child
+          margin: 0
+          max-width: 100%
+        &:last-child
+          margin: 0
+          max-width: 100%
