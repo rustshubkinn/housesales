@@ -3,23 +3,27 @@ footer
   color: #cacaca
   ul
     display: flex
-    flex-direction: row
+    flex-wrap: wrap
     list-style-type: none
     margin: 0
     padding: 0
     font-size: 16px
     line-height: 18px
     &:first-child
-      display: flex
       justify-content: space-between
-      list-style-type: none
+      flex-wrap: wrap
       padding: 45px 0
-      margin: 0
       margin-top: 112px
       border-bottom: 1px solid #D7D6D6
-    li
-      &:not(:last-child)
-        margin-right: 43px
+      li
+        min-width: 130px
+        text-align: center
+        &:not(:last-child)
+          margin: 0
+          margin-bottom: 10px
+    // li
+    //   &:not(:last-child)
+    //     margin-right: 43px
 
   .cities
     border-bottom: 1px solid #D7D6D6
@@ -30,23 +34,65 @@ footer
       line-height: 33px
       color: #ffffff
       margin-top: 33px
-    div
+    &-list
       display: flex
       flex-direction: column
-      div
+      &-item
+        flex-wrap: wrap
+        li
+          margin-bottom: 15px
+          min-width: 130px
         &:not(:first-child)
           margin-top: 25px
+
         p
           font-size: 20px
           line-height: 24px
           font-weight: 400
           margin: 15px 0
+          color: #e5e5e5
 
   .links
     display: flex
+    flex-wrap: wrap
     justify-content: space-between
     align-items: center
+    text-align: center
     padding: 26px 0
-    p
-      font-size: 11px
-      line-height: 12px
+    &-logo
+      margin-right: 50px
+    &-text
+      display: flex
+      margin: 0 20px
+      p
+        font-size: 11px
+        line-height: 12px
+        &:not(:last-child)
+          margin-right: 50px
+
+    img
+      max-width: 138px
+
+@media ( max-width: 1121px )
+  footer
+    .links
+      justify-content: center
+      &-text
+        order: 2
+        margin-top: 30px
+
+      &-social
+        order: 1
+
+@media ( max-width: 500px )
+  footer
+    .links
+      flex-direction: column
+      &-logo
+        margin: 0
+        margin-bottom: 15px
+      &-text
+        flex-direction: column
+        p
+          &:not(:last-child)
+            margin-right: 0
