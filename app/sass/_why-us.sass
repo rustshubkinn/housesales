@@ -10,6 +10,7 @@ section.why-us
     margin: 0
     padding: 0
     h3
+      font-family: Nunito, sans-serif
       font-size: 36px
       font-weight: 600
       line-height: 49px
@@ -43,3 +44,16 @@ section.why-us
       width: 15%
       top: 10%
       left: -15%
+
+@media ( max-width: 1115px )
+  section.why-us
+    flex-direction: column
+    .why-us-list
+      margin-bottom: 50px
+
+@media ( max-width: 650px )
+  section.why-us
+    .why-us-list
+      text-align: center
+      .list-item
+        flex-direction: column
