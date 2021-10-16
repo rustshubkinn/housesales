@@ -1,5 +1,8 @@
-#Project review
-This project is a test task for better understanding of responsive implementation in finished project.
-Project was implemented by me and refactored and reviewed by my FrontEnd Development Mentor.
-The project has only one landing page without scripts.
-Written with HTML+SASS+GULP.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b496e78b-e36d-4c50-8042-243fd313c1e4/deploy-status)](https://app.netlify.com/sites/sharp-torvalds-2fae5d/deploys)
+
+## Housesales
+
+Проект Housesales представляет собой лэндинг страницу. Для сборки проекта используется Gulp. Страница сверстана на HTML, для стилей используется препроцессор SASS.
+Страница написана с возможностью адаптивной резиновой и мобильной верстки.
+
+[Live Version](https://sharp-torvalds-2fae5d.netlify.app/)
